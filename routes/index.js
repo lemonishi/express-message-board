@@ -23,7 +23,7 @@ router.get("/new", function (req, res, next) {
   res.render("form", { title: "Mini Messageboard Form" });
 });
 
-router.post("/submit", function (req, res, next) {
+router.post("/new", function (req, res, next) {
   const newMessage = {
     text: req.body.text,
     user: req.body.user,
